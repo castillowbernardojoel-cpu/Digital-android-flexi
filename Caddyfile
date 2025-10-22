@@ -1,16 +1,3 @@
-:6080 {
-    root * /app/novnc
-    file_server
-
-    # Proxy para la máquina virtual Android (QEMU VNC)
-    reverse_proxy /vnc/* 127.0.0.1:5900
-
-    # WebSocket para noVNC
-    reverse_proxy /websockify 127.0.0.1:6080
-
-    encode gzip
-    log {
-        output stdout
-        format console
-    }
+:10000 {
+    reverse_proxy localhost:10000
 }
