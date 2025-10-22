@@ -1,32 +1,32 @@
-# 🌐 Digital Android Flexi
+# 🚀 Digital Android Flexi — VM Android en la Nube con Railway.app
 
-**Autor:** Bernardo Joel Castillo Wilson  
-**Proyecto:** Máquina Virtual Android basada en RHEL 10, desplegable en Railway.app  
+**Autor:** Bernardo Joel Castillo (castillowbernardojoel-cpu)  
 **Versión:** 1.0  
+**Licencia:** MIT  
 **Fecha:** Octubre 2025  
 
 ---
 
-## 🧠 Descripción General
+## 📘 Descripción del Proyecto
 
-**Digital Android Flexi** es un entorno virtual basado en Linux (RHEL 10) que ejecuta Android en la nube.  
-El sistema se despliega automáticamente en **Railway.app**, permitiendo el acceso remoto vía navegador web con **Caddy (HTTPS)** y **noVNC** — sin necesidad de instalar aplicaciones o configuraciones locales.
+**Digital Android Flexi** es un entorno virtual basado en **RHEL 10 + Android ISO**, diseñado para ejecutarse directamente en la nube mediante **Railway.app**.
 
-Este proyecto ofrece una solución ligera y flexible para desarrolladores, testers o usuarios que deseen ejecutar un sistema Android virtual directamente desde un navegador web, incluyendo dispositivos móviles como el **Samsung A25**.
+Permite acceder a una **máquina virtual Android completa**, desde cualquier navegador web (móvil o PC), **sin instalar aplicaciones**, gracias a la integración de:
 
----
-
-## ⚙️ Componentes Principales
-
-| Componente | Descripción |
-|-------------|-------------|
-| **QEMU/KVM** | Virtualiza la máquina Android en base a una imagen ISO. |
-| **Caddy** | Servidor web que habilita HTTPS automáticamente. |
-| **noVNC + Websockify** | Permiten acceso gráfico remoto vía navegador web. |
-| **Railway.app** | Plataforma de despliegue gratuita y en la nube. |
+- **QEMU:** emulación del sistema Android.  
+- **noVNC:** acceso gráfico remoto vía navegador.  
+- **Caddy:** servidor HTTPS automático con certificados SSL.  
+- **Railway.app:** despliegue gratuito con dominio público.
 
 ---
 
-## 🧩 Estructura del Repositorio
+## ⚙️ Estructura del Proyecto
+Digital-android-flexi/ │ ├── setup_vm_android.sh   # Script principal de configuración y ejecución ├── Dockerfile            # Imagen base para Railway (Ubuntu + QEMU + Caddy) ├── Caddyfile             # Configuración HTTPS y reverse proxy ├── README.md             # Este documento ├── .gitignore            # Archivos a ignorar └── iso/                  # Carpeta donde se descarga la imagen ISO
 
-Digital-android-flexi/ ├─ iso/                     # Carpeta para la imagen ISO (no se sube a GitHub) ├─ setup_vm_android.sh       # Script principal de instalación y arranque ├─ Dockerfile                # Define la imagen de contenedor para Railway ├─ Caddyfile                 # Configuración de HTTPS ├─ .gitignore                # Archivos a excluir del repositorio ├─ LICENSE                   # Licencia del proyecto └─ README.md                 # Este documento
+---
+
+## 🧩 Requisitos Previos
+
+- Cuenta gratuita en [Railway.app](https://railway.app/).  
+- Archivo **ISO de Android o RHEL 10** alojado en Google Drive (ya incluido).  
+- Navegador web actualizado (Chrome, Firefox, Edge o Android WebView).
