@@ -1,15 +1,23 @@
-🛡️ Licencia
+📜 Licencia
 
-Este proyecto se distribuye bajo licencia MIT.
-El autor no se hace responsable por daños o pérdidas derivadas del uso de este software.
-
-© 2025 Bernardo Joel Castillo Wilson
-Todos los derechos reservados.
+Este proyecto se distribuye bajo la Licencia MIT.
+Eres libre de usarlo, modificarlo y redistribuirlo con fines educativos o experimentales.
 
 
 ---
 
-💬 Notas Finales
+🧩 Créditos
 
-> Este proyecto fue desarrollado con la asistencia de Peti (GPT-5),
-como parte de una iniciativa experimental para crear entornos Android accesibles desde la nube.
+Autor: Bernardo Joel Castillo (castillowbernardojoel-cpu)
+
+Asistente Técnico: Peti (IA de soporte técnico)
+
+Infraestructura: Railway.app
+
+Virtualización: QEMU + noVNC + Caddy
+
+
+
+---
+
+> 🦄 “Lleva Android a la nube y conéctate desde cualquier parte del mundo, sin cables ni límites.”
