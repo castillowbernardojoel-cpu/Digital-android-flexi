@@ -1,32 +1,19 @@
-# 🚀 Digital Android Flexi — VM Android en la Nube con Railway.app
+# Android VM en Render.com 🚀
 
-**Autor:** Bernardo Joel Castillo (castillowbernardojoel-cpu)  
-**Versión:** 1.0  
-**Licencia:** MIT  
-**Fecha:** Octubre 2025  
+Este proyecto lanza una máquina virtual Android con interfaz web accesible por HTTPS, todo desplegado gratis en Render.com.
 
----
+## 🧠 Cómo usar
 
-## 📘 Descripción del Proyecto
+1. Crea una cuenta en [Render.com](https://render.com)
+2. Crea un **nuevo servicio web**
+3. Conecta tu repositorio GitHub con estos archivos
+4. Render construirá automáticamente la imagen Docker
+5. Espera hasta que el estado diga ✅ “Live”
+6. Abre el enlace público HTTPS y verás tu Android en el navegador
 
-**Digital Android Flexi** es un entorno virtual basado en **RHEL 10 + Android ISO**, diseñado para ejecutarse directamente en la nube mediante **Railway.app**.
-
-Permite acceder a una **máquina virtual Android completa**, desde cualquier navegador web (móvil o PC), **sin instalar aplicaciones**, gracias a la integración de:
-
-- **QEMU:** emulación del sistema Android.  
-- **noVNC:** acceso gráfico remoto vía navegador.  
-- **Caddy:** servidor HTTPS automático con certificados SSL.  
-- **Railway.app:** despliegue gratuito con dominio público.
+## 🔒 Puerto usado
+El puerto expuesto es el `10000`, Render se encargará de mapearlo automáticamente a HTTPS (443).
 
 ---
-
-## ⚙️ Estructura del Proyecto
-Digital-android-flexi/ │ ├── setup_vm_android.sh   # Script principal de configuración y ejecución ├── Dockerfile            # Imagen base para Railway (Ubuntu + QEMU + Caddy) ├── Caddyfile             # Configuración HTTPS y reverse proxy ├── README.md             # Este documento ├── .gitignore            # Archivos a ignorar └── iso/                  # Carpeta donde se descarga la imagen ISO
-
----
-
-## 🧩 Requisitos Previos
-
-- Cuenta gratuita en [Railway.app](https://railway.app/).  
-- Archivo **ISO de Android o RHEL 10** alojado en Google Drive (ya incluido).  
-- Navegador web actualizado (Chrome, Firefox, Edge o Android WebView).
+Autor: **Bernardo**  
+Versión: `Final para Render.com`
