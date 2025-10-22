@@ -28,3 +28,5 @@ Este proyecto ofrece una solución ligera y flexible para desarrolladores, teste
 ---
 
 ## 🧩 Estructura del Repositorio
+
+Digital-android-flexi/ ├─ iso/                     # Carpeta para la imagen ISO (no se sube a GitHub) ├─ setup_vm_android.sh       # Script principal de instalación y arranque ├─ Dockerfile                # Define la imagen de contenedor para Railway ├─ Caddyfile                 # Configuración de HTTPS ├─ .gitignore                # Archivos a excluir del repositorio ├─ LICENSE                   # Licencia del proyecto └─ README.md                 # Este documento
